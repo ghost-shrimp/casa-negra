@@ -1,0 +1,1 @@
+export { ArtList } from './components/art-list';

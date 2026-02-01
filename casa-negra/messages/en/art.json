@@ -1,0 +1,22 @@
+{
+  "title": "Gallery",
+  "description": "View our collection",
+  "empty": {
+    "title": "No Art Available",
+    "message": "There is currently no art to display. Please check back later.",
+    "actionText": "Refresh"
+  },
+  "type": {
+    "oilPainting": "Oil Painting",
+    "acrylic": "Acrylic",
+    "watercolor": "Watercolor",
+    "sculpture": "Sculpture",
+    "mixedMedia": "Mixed Media",
+    "installation": "Installation",
+    "photography": "Photography",
+    "digitalArt": "Digital Art",
+    "drawing": "Drawing",
+    "print": "Print",
+    "other": "Other"
+  }
+}

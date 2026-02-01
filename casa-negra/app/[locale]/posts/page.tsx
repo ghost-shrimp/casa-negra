@@ -1,7 +1,7 @@
 import { useTranslations } from 'next-intl'
 
-export default function Blog() {
-  const t = useTranslations('blog')
+export default function About() {
+  const t = useTranslations('post')
 
   return (
     <div className="space-y-4">

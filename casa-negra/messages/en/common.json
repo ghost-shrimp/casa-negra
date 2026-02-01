@@ -1,8 +1,13 @@
 {
   "home": "Home",
   "about": "About",
-  "blog": "Blog",
+  "post": "Blog",
   "events": "Events",
-  "gallery": "Gallery",
-  "store": "Store"
+  "art": "Gallery",
+  "store": "Store",
+  "error": {
+    "title": "Something went wrong",
+    "message": "There was a problem loading the content. Please try again later.",
+    "actionText": "Retry"
+  }
 }

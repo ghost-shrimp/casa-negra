@@ -1,8 +1,13 @@
 {
   "home": "Inicio",
   "about": "Acerca de",
-  "blog": "Blog",
+  "post": "Blog",
   "events": "Eventos",
-  "gallery": "Galería",
-  "store": "Tienda"
+  "art": "Galería",
+  "store": "Tienda",
+  "error": {
+    "title": "Algo salió mal",
+    "message": "Hubo un problema al cargar el contenido. Por favor, inténtalo de nuevo más tarde.",
+    "actionText": "Reintentar"
+  }
 }

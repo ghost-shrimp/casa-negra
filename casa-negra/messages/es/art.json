@@ -1,0 +1,22 @@
+{
+  "title": "Galería",
+  "description": "Ver nuestra colección",
+  "empty": {
+    "title": "No hay obras de arte disponibles",
+    "message": "Parece que no hay obras de arte disponibles en este momento. Vuelve más tarde.",
+    "actionText": "Actualizar"
+  },
+  "type": {
+    "oilPainting": "Pintura al óleo",
+    "acrylic": "Acrílico",
+    "watercolor": "Acuarela",
+    "sculpture": "Escultura",
+    "mixedMedia": "Técnica mixta",
+    "installation": "Instalación",
+    "photography": "Fotografía",
+    "digitalArt": "Arte digital",
+    "drawing": "Dibujo",
+    "print": "Grabado",
+    "other": "Otro"
+  }
+}

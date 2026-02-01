@@ -1,4 +1,5 @@
 import './globals.css'
+import Providers from '@/providers';
 
 export const metadata = {
   title: 'Casa Negra',
@@ -10,11 +11,15 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+
   return (
     <html suppressHydrationWarning>
       <body className="min-h-screen bg-neutral-50 text-neutral-900">
-        {children}
+        <Providers>
+          {children}
+        </Providers>
       </body>
     </html>
+
   )
 }

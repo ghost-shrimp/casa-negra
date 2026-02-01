@@ -1,7 +1,10 @@
+import { MosaicSpinner } from '@/components/mosaic-spinner'
+import { ArtList } from '@/features/art'
 import { useTranslations } from 'next-intl'
+import { Suspense } from 'react'
 
 export default function Gallery() {
-  const t = useTranslations('gallery')
+  const t = useTranslations('art')
 
   return (
     <div className="space-y-4">
@@ -9,6 +12,9 @@ export default function Gallery() {
       <p className="text-neutral-600">
         {t('description')}
       </p>
+      <Suspense fallback={<MosaicSpinner />}>
+        <ArtList />
+      </Suspense>
     </div>
   )
 }

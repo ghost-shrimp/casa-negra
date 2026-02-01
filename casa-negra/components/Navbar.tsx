@@ -11,10 +11,10 @@ export default function Navbar() {
 
   const links = [
     { href: '/', label: t('home') },
-    { href: '/gallery', label: t('gallery') },
+    { href: '/art', label: t('art') },
     { href: '/store', label: t('store') },
     { href: '/events', label: t('events') },
-    { href: '/blog', label: t('blog') },
+    // { href: '/post', label: t('post') },
     { href: '/about', label: t('about') },
   ]
 
