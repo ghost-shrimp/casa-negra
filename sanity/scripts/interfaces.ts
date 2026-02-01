@@ -1,3 +1,5 @@
+import { ArtworkType } from "../constants/constants"
+
 interface MockArtist {
   _type: 'artist'
   name: string
@@ -21,8 +23,8 @@ interface MockArtwork {
   title: string
   year: string
   price: number
-  technique: string
   materials: string[]
+  type: ArtworkType
   images: Array<{
     _type: 'image'
     asset: { _ref: string }

@@ -2,6 +2,7 @@ import 'dotenv/config'
 import { faker } from '@faker-js/faker'
 import { createClient } from '@sanity/client'
 import { MockArtist, MockArtwork, MockEvent, MockProduct } from './interfaces'
+import { typeOptions } from '../constants/constants'
 
 const dataset = process.env.SANITY_STUDIO_DATASET || 'dev'
 const token = process.env.SANITY_STUDIO_AUTH_TOKEN
@@ -137,14 +138,7 @@ const generateArtworks = async (
             title: faker.lorem.words({ min: 2, max: 4 }),
             year: String(faker.date.past({ years: 30 }).getFullYear()),
             price: faker.number.float({ min: 500, max: 50000, fractionDigits: 2 }),
-            technique: faker.helpers.arrayElement([
-                'Oil on canvas',
-                'Acrylic',
-                'Watercolor',
-                'Mixed media',
-                'Sculpture',
-                'Photography',
-            ]),
+            type: faker.helpers.arrayElement(typeOptions).value,
             materials: faker.helpers.multiple(
                 () =>
                     faker.helpers.arrayElement([

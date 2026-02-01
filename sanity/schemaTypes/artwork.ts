@@ -1,4 +1,5 @@
-import {defineField, defineType} from 'sanity'
+import { defineField, defineType } from 'sanity'
+import { typeOptions } from '../constants/constants'
 
 export const artworkType = defineType({
     name: 'artwork',
@@ -21,15 +22,19 @@ export const artworkType = defineType({
             type: 'number',
         }),
         defineField({
-            name: 'technique',
-            title: 'Technique',
+            name: 'type',
+            title: 'Type',
             type: 'string',
+            options: {
+                list: typeOptions,
+                layout: 'dropdown'
+            },
         }),
         defineField({
             name: 'materials',
             title: 'Materials',
             type: 'array',
-            of: [{type: 'string'}],
+            of: [{ type: 'string' }],
         }),
         defineField({
             name: 'images',
@@ -38,7 +43,7 @@ export const artworkType = defineType({
             of: [
                 {
                     type: 'image',
-                    options: {hotspot: true},
+                    options: { hotspot: true },
                 },
             ],
         }),
@@ -51,13 +56,13 @@ export const artworkType = defineType({
             name: 'description',
             title: 'Description',
             type: 'array',
-            of: [{type: 'block'}],
+            of: [{ type: 'block' }],
         }),
         defineField({
             name: 'artist',
             title: 'Artist',
             type: 'reference',
-            to: [{type: 'artist'}],
+            to: [{ type: 'artist' }],
         }),
     ],
 })
